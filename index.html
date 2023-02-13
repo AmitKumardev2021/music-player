@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bb96730049.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Static Template</title>
+  </head>
+
+  <body class="body-full">
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#">
+              <i class="fa-solid fa-music me-4 ms-1 point-me"></i
+            ></a>
+            <button
+              class="navbar-toggler m-1 bg-tr bg-transparent"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >favorite</a
+                  >
+                </li>
+              </ul>
+              <form
+                class="d-flex flex-wrapsearch-box align-items-center search-box"
+                role="search"
+              >
+                <div class="search-button">
+                  <i
+                    class="fa-solid fa-magnifying-glass text-white point-me ms-2"
+                  ></i>
+                </div>
+
+                <input
+                  class="form-control search-input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa-solid fa-microphone text-white me-sm-2"></i>
+              </form>
+            </div>
+          </div>
+          <div class="notify-box gap-3">
+            <i class="fa-solid fa-bell noti text-white"></i>
+            <div class="profile-img ms-sm-4 ms-2 mt-2"></div>
+          </div>
+        </nav>
+      </header>
+      <!-- main screen -->
+      <div class="container align-items-center">
+        <div class=" row ">
+          <!-- artist/author detail -->
+          <div class="col-12 mb-4 me-1 col-sm-5 col-xl-7 text-white">
+            <div class=" row  author-poster">
+              <!-- author poster image -->
+              <div class="col-12 gap-3 col-sm-12 col-xl-5 artist-poster">
+                <div class="photo-artist"></div>
+              </div>
+              <!--author album info  -->
+              <div class="col-12 gap-3 col-sm-12 col-xl-7">
+                <!-- author album name -->
+                <div class=" row  mt-5">
+                  <div class="col-7 author-album-name">
+                    <p class="album-name">album-name</p>
+                    <p class="artist-group">artist-group</p>
+                  </div>
+                  <!-- album follower -->
+                  <div class="col-5 follower-btn"><p>8,520 followers</p></div>
+                </div>
+                <!-- album discription -->
+                <div class=" row ">
+                  <div class="col-12 mb-5">
+                    <p class="album-discription">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsa laborum, sit sed minima omnis illum reiciendis magnam
+                      voluptatibus voluptatem eius veniam deleniti, facilis
+                      beatae blanditiis vero eum inventore tempora assumenda id
+                      ab, itaque deserunt illo et quaerat! Itaque, facere
+                      eligendi.
+                    </p>
+                  </div>
+                  <div class=" row ">
+                    <div class="col-6">
+                      <!-- play all button -->
+                      <button class="play-all-btn">Play all</button>
+                      <!-- track total count -->
+                      <p class="track-count">total-track/total-album</p>
+                    </div>
+                    <!-- follow button -->
+                    <div class="col-3 user-follow-btn">Follow</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- simlimar artist library -->
+          <div
+            class="col-12 col-sm-6 col-xl-4  overflow-auto side-song-box bg-transparent text-white"
+          >
+            <!-- songs list -->
+            <div class=" row  mt-2">
+              <div class="col-7 col-xl-9"><h4>similar artist</h4></div>
+              <div class="col-3 col-xl-3 left-down-album-name text-white me-3 mt-1">view all</div>
+            </div>
+            <!-- side-song-card -->
+            <div class=" row  side-song-list mb-3">
+              <div class="col-3 col-sm-4 col-xl-4">
+                <!-- songs icon -->
+                <div class="song-icon"></div>
+              </div>
+              <div class="col-5 col-sm-5 col-xl-6 song-name-box">
+                <div class="col">
+                  <!-- song name -->
+                  <p class="songs-name">Imagine dragon</p>
+                </div>
+                <div class="col">
+                  <!-- band group -->
+                  <p class="song-gener">pop band</p>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-xl-1">
+                <div class="col">
+                  <!-- menu -->
+                  <h1 class="side-list-menu">...</h1>
+                </div>
+                <div class="col">
+                  <!-- song duration time -->
+                  <p class="side-song-duration">4.20</p>
+                </div>
+              </div>
+            </div>
+            <!-- part-2 -->
+            <div class=" row  side-song-list mb-3">
+              <div class="col-3 col-sm-4 col-xl-4">
+                <!-- songs icon -->
+                <div class="song-icon"></div>
+              </div>
+              <div class="col-5 col-sm-5 col-xl-6 song-name-box">
+                <div class="col">
+                  <!-- song name -->
+                  <p class="songs-name">Imagine dragon</p>
+                </div>
+                <div class="col">
+                  <!-- band group -->
+                  <p class="song-gener">pop band</p>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-xl-1">
+                <div class="col">
+                  <!-- menu -->
+                  <h1 class="side-list-menu">...</h1>
+                </div>
+                <div class="col">
+                  <!-- song duration time -->
+                  <p class="side-song-duration">4.20</p>
+                </div>
+              </div>
+            </div>
+            <!-- part-3 -->
+            <div class=" row  side-song-list mb-3">
+              <div class="col-3 col-sm-4 col-xl-4">
+                <!-- songs icon -->
+                <div class="song-icon"></div>
+              </div>
+              <div class="col-5 col-sm-5 col-xl-6 song-name-box">
+                <div class="col">
+                  <!-- song name -->
+                  <p class="songs-name">Imagine dragon</p>
+                </div>
+                <div class="col">
+                  <!-- band group -->
+                  <p class="song-gener">pop band</p>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-xl-1">
+                <div class="col">
+                  <!-- menu -->
+                  <h1 class="side-list-menu">...</h1>
+                </div>
+                <div class="col">
+                  <!-- song duration time -->
+                  <p class="side-song-duration">4.20</p>
+                </div>
+              </div>
+            </div>
+            <!-- part-4 -->
+
+            <div class=" row  side-song-list mb-3">
+              <div class="col-3 col-sm-4 col-xl-4">
+                <!-- songs icon -->
+                <div class="song-icon"></div>
+              </div>
+              <div class="col-5 col-sm-5 col-xl-6 song-name-box">
+                <div class="col">
+                  <!-- song name -->
+                  <p class="songs-name">Imagine dragon</p>
+                </div>
+                <div class="col">
+                  <!-- band group -->
+                  <p class="song-gener">pop band</p>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-xl-1">
+                <div class="col">
+                  <!-- menu -->
+                  <h1 class="side-list-menu">...</h1>
+                </div>
+                <div class="col">
+                  <!-- song duration time -->
+                  <p class="side-song-duration">4.20</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" row ">
+          <!-- current song list -->
+          
+          <div class="col-12 gap-3  col-sm-12 col-xl-7">
+          <div class="col left-down-list">
+            <div class="row  left-down-back-color ">
+              <div class="col col-sm-2 col-xl-1 serial-number">01</div>
+              <div class="col col-sm-2 col-xl-1">
+                <div class="left-down-list-img"></div>
+              </div>
+              <div class="col col-sm-2 col-xl-2">
+                <div class="col left-down-song-name">Judas Rising</div>
+                <div class="col left-down-album-name">Judas Priest</div>
+              </div>
+              <div class="col col-sm-4 col-xl-6 bottom-song-duration">4.44</div>
+              <div class="col col-sm-1 col-xl-1 bottom-heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div class="col col-sm-1 col-xl-1">
+              <div class="col down-to-add"><i class="fa-solid fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- list-2 -->
+          <div class="col left-down-list">
+            <div class="row  left-down-back-color ">
+              <div class="col col-sm-2 col-xl-1 serial-number">02</i></div>
+              <div class="col col-sm-2 col-xl-1">
+                <div class="left-down-list-img"></div>
+              </div>
+              <div class="col col-sm-2 col-xl-2">
+                <div class="col left-down-song-name">Killer Queen</div>
+                <div class="col left-down-album-name">Queen</div>
+              </div>
+              <div class="col col-sm-4 col-xl-6 bottom-song-duration">4.44</div>
+              <div class="col col-sm-1 col-xl-1 bottom-heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div class="col col-sm-1 col-xl-1">
+              <div class="col down-to-add"><i class="fa-solid fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- list-3 -->
+          <div class="col left-down-list">
+            <div class=" row left-down-back-color ">
+              <div class="col col-sm-2 col-xl-1 serial-number">03</div>
+              <div class="col col-sm-2 col-xl-1">
+                <div class="left-down-list-img"></div>
+              </div>
+              <div class="col col-sm-2 col-xl-2">
+                <div class="col left-down-song-name">White Queen</div>
+                <div class="col left-down-album-name">Queen</div>
+              </div>
+              <div class="col col-sm-4 col-xl-6 bottom-song-duration">4.44</div>
+              <div class="col col-sm-1 col-xl-1 bottom-heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div class="col col-sm-1 col-xl-1">
+              <div class="col down-to-add"><i class="fa-solid fa-plus"></i></div>
+            </div>
+          </div>
+          <!-- list-4 -->
+          <div class="col left-down-list">
+            <div class=" row  left-down-back-color ">
+              <div class="col col-sm-2 col-xl-1 serial-number">04</div>
+              <div class="col col-sm-2 col-xl-1">
+                <div class="left-down-list-img"></div>
+              </div>
+              <div class="col col-sm-2 col-xl-2">
+                <div class="col left-down-song-name">This Is Radio Clash</div>
+                <div class="col left-down-album-name">The Clash</div>
+              </div>
+              <div class="col col-sm-4 col-xl-6 bottom-song-duration">4.44</div>
+              <div class="col col-sm-1 col-xl-1 bottom-heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div class="col col-sm-1 col-xl-1">
+              <div class="col down-to-add"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            </div>
+          </div>
+          
+          
+          <!-- recently played song list -->
+          <div class="col-12  col-sm-12 col-xl-4  down-right-box">
+           <div class=" row  ">
+              <div class="row ms-2 text-white">
+                  <div class="col-8 col-sm-9 col-xl-9 fs-3 fw-bold text-capitalize">recently played</div>
+                  <div class="col-2 col-sm-2 col-xl-3 mt-2 right-side-box-text">view all</div>
+              </div>
+              <div class="col-12  ">
+                  <div class=" row left-down-list-next ">
+                    <div class="col-1 col-sm-1 col-xl-1 serial-number">01</div>
+                    <div class="col-2 col-sm-2 col-xl-2">
+                      <div class="left-down-list-img"></div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-xl-6">
+                      <div class="col left-down-song-name">Judas Priest</div>
+                      <div class="col left-down-album-name">Judas Rising</div>
+                    </div>
+                    
+                    <div class="col-3 col-sm-2 col-xl-1 bottom-heart-icon">
+                      <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- list-2 -->
+              <div class="col-12 left-down-list">
+                  <div class=" row  left-down-list-next ">
+                      <div class="col-1 col-sm-1 col-xl-1 serial-number">02</div>
+                      <div class="col-2 col-sm-2 col-xl-2">
+                        <div class="left-down-list-img"></div>
+                      </div>
+                      <div class="col-5 col-sm-6 col-xl-6">
+                        <div class="col left-down-song-name">Killer Queen</div>
+                        <div class="col left-down-album-name">Queen</div>
+                      </div>
+                      
+                      <div class="col-3 col-sm-2 col-xl-1 bottom-heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+              </div>
+              <!-- list-3 -->
+              <div class="col-12 left-down-list">
+                  <div class=" row  left-down-list-next ">
+                      <div class="col-1 col-sm-1 col-xl-1 serial-number">03</div>
+                      <div class="col-2 col-sm-2 col-xl-2">
+                        <div class="left-down-list-img"></div>
+                      </div>
+                      <div class="col-5 col-sm-6 col-xl-6">
+                        <div class="col left-down-song-name">White Queen</div>
+                        <div class="col left-down-album-name">Queen</div>
+                      </div>
+                      
+                      <div class="col-3 col-sm-2 col-xl-1 bottom-heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+              </div>
+              <!-- list-4 -->
+              <div class="col-12 left-down-list">
+                  <div class=" row left-down-list-next ">
+                      <div class="col-1 col-sm-1 col-xl-1 serial-number">04</div>
+                      <div class="col-2 col-sm-2 col-xl-2">
+                        <div class="left-down-list-img"></div>
+                      </div>
+                      <div class="col-5 col-sm-6 col-xl-6">
+                        <div class="col left-down-song-name">This Is Radio Clash</div>
+                        <div class="col left-down-album-name">The Clash</div>
+                      </div>
+                      
+                      <div class="col-3 col-sm-2 col-xl-1 bottom-heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+              </div>
+              <!-- list-5 -->
+              <div class="col-12 left-down-list">
+                  <div class=" row left-down-list-next  ">
+                      <div class="col-1 col-sm-1 col-xl-1 serial-number">05</div>
+                      <div class="col-2 col-sm-2 col-xl-2">
+                        <div class="left-down-list-img"></div>
+                      </div>
+                      <div class="col-5 col-sm-6 col-xl-6">
+                        <div class="col left-down-song-name">In A Big Country</div>
+                        <div class="col left-down-album-name">Big Country</div>
+                      </div>
+                      
+                      <div class="col-3 col-sm-2 col-xl-1 bottom-heart-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- player button -->
+      <div class="musice-player sticky-sm-bottom sticky-xl-bottom">
+        <div class=" row ">
+          <!-- singer-image -->
+          <div class="col-12 col-xl-3 ">
+            <div class="row ">
+              <div class="col-3 bottom-poster ms-5 "><div  class=" ms-5 bottom-image-poster"></div></div>
+              <div class="col-3 mt-4">
+                <div class="col bottom-music-name">imajine by jhon</div>
+                <div class="col bottom-band-name">band-name</div>
+
+              </div>
+              <div class="col-1 mt-4"><i class="fa-regular fa-heart"></i></div>
+              <div class="col-1 mt-4"><i class="fa-solid fa-ban"></i></div>
+            </div>
+          </div>
+          <!-- play-pause button -->
+          <div class="col-12 col-xl-6 ">
+            <div class=" row">
+              <div class="col">
+                <div class=" row text-end  mt-4">
+                  <div class="col-4"><i class="fa-solid fa-shuffle"></i></div>
+                  <div class="col-1"><i class="fa-solid fa-forward"></i></div>
+                  <div class="col-1"><i class="fa-sharp fa-solid fa-play"></i></div>
+                  <div class="col-1"><i class="fa-solid fa-backward"></i></div>
+                  <div class="col-1"><i class="fa-solid fa-repeat"></i></div>
+                </div>
+              </div>
+              <!-- seekbar -->
+              <div class="row slider-seekbar mt-3 ">
+                <div class="col-2 col-xl-1">2.40</div>
+                <div class=" col-7 col-xl-7 progressBar"><input type="range" id="seekbar" min="0" max="100"></div>
+                <div class="col-2 col-xl-1">1.30</div>
+              </div>
+            </div>
+          </div>
+          <!-- sound-bar -->
+          <div class="col-12 col-xl-3  text-center ">
+            <div class=" row text-center ms-5 mt-4">
+              <div class="col-1"><i class="fa-solid fa-list-ul"></i></div>
+              <div class="col-1"><i class="fa-sharp fa-solid fa-computer"></i></div>
+              <div class="col-1"><i class="fa-solid fa-volume-high"></i></div>
+              <div class="col-5"><input type="range" id="sound-bar" min="0" max="100" ></div>
+              <div class="col-1"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- javascrip start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
